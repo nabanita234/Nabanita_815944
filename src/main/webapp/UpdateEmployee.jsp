@@ -10,7 +10,7 @@
     public void jspInit(){
     	try{
     		Class.forName("com.mysql.jdbc.Driver");
-        	conn = DriverManager.getConnection("jdbc:mysql://localhost/demo","root","Alsd@445#");
+        	conn = DriverManager.getConnection("jdbc:mysql://localhost/demo","root","Nabatina@123");
         	statement = conn.prepareStatement("update account set bal=? where id=?;");
     	}catch(SQLException e){
     		System.out.print("SQL exception");
